@@ -1,0 +1,31 @@
+<?php
+
+$anonDice1 = mt_rand(1, 6);
+$anonDice2 = mt_rand(1, 6);
+
+
+$compDice1 = mt_rand(1, 6);
+$compDice2 = mt_rand(1, 6);
+
+
+echo "U anona vypalo $anonDice1 i $anonDice2\nU komp'yutera vypalo $compDice1 i $compDice2\n";
+
+
+$anonSum = $anonDice1 + $anonDice2;
+$compSum = $compDice1 + $compDice2; 
+
+
+if (($anonDice1 == $anonDice2) && ($compDice1 == $compDice2)) {
+  echo "2 dabla tebya zhdiot bolshaia udacha\n";
+  exit();
+}
+elseif ($anonSum > $compSum) {
+  echo "anon pobedil\n";
+}
+elseif ($anonSum > $compSum) {
+  echo "comp pobedil\n";
+}
+else {
+  echo "nich'a\n";
+}
+
