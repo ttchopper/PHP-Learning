@@ -1,0 +1,17 @@
+<?php
+error_reporting(-1);
+
+
+$randPost = mt_rand(000000, 999999);
+$lastNumber = $randPost % 10;
+
+
+if ($lastNumber % 2) {
+  echo "$lastNumber\n";
+  echo "odd post\n";
+}
+else {
+ echo "$lastNumber\n";
+ echo "even post\n";
+}
+
