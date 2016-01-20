@@ -12,7 +12,7 @@ $paymentTotal = 0; /* Сколько всего отдал банку анон *
 /* Посчитаем расходы 20 раз на 20 месяцев вперед */
 for ($month = 1; $month <= 20; $month ++) {
     $creditBalance = ( $creditBalance * $percent ) + $servicePayment;
-    if ($creditBalance <= $monthlyPayment) {
+    if ($creditBalance < $monthlyPayment) {
         $monthlyPayment = $creditBalance; 
     }       
     $creditBalance -= $monthlyPayment;	
