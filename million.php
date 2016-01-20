@@ -6,7 +6,7 @@ error_reporting(-1);
 $deposit = 10000;
 $percentPerYear = 1.1;
 $personCurrentAge = 16;
-for ($year = 1; $year <= 10000; $year++) {
+for ($year = 1; $year <= $deposit; $year++) {
     $deposit *= $percentPerYear;
     if ($deposit >= 1000000) {
         $personCurrentAge += $year;
